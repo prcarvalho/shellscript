@@ -1,0 +1,22 @@
+###### Operadores Aritmeticos ######
++ (soma)
+- (subtracao)
++ (multiplicacao)
+/ (divisao)
+++ (incremento)
+-- (decremento)
+
+
+##### Operadores Logicos ######
+&& (AND)
+|| (OR)
+|  (NOT)
+
+###### Comparadores ######
+-eq (igual)
+-ne (diferente)
+-gt (maior)
+-it (menor)
+-le (menor igual)
+-ge (maior igual)
+
