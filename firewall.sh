@@ -30,6 +30,11 @@ iptables -A INPUT -p tcp --dport 110 -j ACCEPT
 iptables -A INPUT -p tcp --dport 25 -j ACCEPT
 ### Liberando o acesso remoto via SSH:
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+#liberando SAMBA
+iptables -A INPUT -p tcp --dport 445 -j ACCEPT
+iptables -A INPUT -p tcp --dport 139 -j ACCEPT
+iptables -A INPUT -p udp --dport 137 -j ACCEPT
+iptables -A INPUT -p udp --dport 138 -j ACCEPT
 ### Bloqueia as portas UDP de 0 a 1023 ( com excessão das abertas acima):
 iptables -A INPUT -p udp --dport 0:1023 -j DROP
 ### Bloueia conexões nas demais portas:
